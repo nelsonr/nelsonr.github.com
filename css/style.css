@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  margin: auto;
+  width: 960px;
+}
+
+#topbar {
+  background-color: green;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+#main {
+  overflow: hidden;
+}
+
+#projects {
+  float: left;
+  margin-right: 20px;
+  padding: 10px;
+  background-color: red;
+  width: 720px;
+  min-height: 350px;
+}
+
+#sidebar {
+  float: right;
+  padding: 5px;
+  background-color: blue;
+  width: 190px;
+  min-height: 360px
+}
+
+#footer {
+  margin-top: 20px;
+  background-color: #E8C427;
+  height: 80px;
+}
