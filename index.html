@@ -4,25 +4,32 @@
   <meta charset="UTF-8">
   <title>Nelson Rodrigues - Web Developer</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 </head>
 <body>
   <div id="wrapper">
-    <div id="topbar"></div>
-    <div id="main">
-      <div id="projects">
-        <div class="projecto">
-          <div id="projecto_img"></div>
-          <div id="projecto_details"></div>
+    <header>
+      <div id="introduction">hi, my name is <span class="name">Nelson Rodrigues</span> and I'm a Web Developer</div>
+      <div id="skills">And I work with in HTML, CSS, Javascript, PHP &amp; MySQL.</div>
+    </header>
+    <div id="projects">
+      <h2>Projects</h2>
+      <div class="project" id="project_1">
+        <div class="project_details">Gestão dos contactos de clientes - Projecto PHP do curso FLAGProfessional Web Programmer no centro de formação profissional FLAG</div>
+        <div class="project_img">
+          <img src="img/php-home.png" alt="Gestão Comercial Home">
+          <img src="img/php-highlight.png" alt="Gestão Comercial Pesquisa">
+          <img src="img/php-editar.png" alt="Gestão Comercial Editar">
         </div>
       </div>
-      <div id="sidebar">
-        <div id="foto"></div>
-        <div id="descricao"></div>
+      <div class="project" id="project_2">
+        <div class="project_details">Oeiras ainda Melhor - Página de Ângelo Pereira,  Militante da Juventude Social Democrática</div>
+        <div class="project_img"><img src="img/oeirasaindamelhor.png" alt="Oeiras ainda melhor"></div>
       </div>
     </div>
-    <div id="footer"></div>
+    <div id="footer">Nelson Rodrigues 2011 - All Rights Reserved <br/><br/> Contact: nelsonr[at]sapo.pt</div>
   </div>
 </body>
 </html>
