@@ -104,7 +104,6 @@ header span.name {
 }
 
 #projects {
-  margin: auto;
   margin-top: 50px;
 }
 
@@ -112,7 +111,6 @@ header span.name {
   font-family: 'CandalRegular';
   font-size: 30px;
   text-align: center;
-  text-decoration: underline;
   text-shadow: #FFF 2px 2px 1px;
   margin-bottom: 15px;
 }
@@ -126,9 +124,11 @@ header span.name {
 
 .project:last-child {
   border-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .project .project_details {
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
@@ -144,6 +144,6 @@ header span.name {
 
 #footer {
   font-family: 'CandalRegular';
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
