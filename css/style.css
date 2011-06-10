@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* Reset*/
+/* Reset */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -62,23 +62,17 @@ table {
 
 body {
   color: #1E1C1C;
-  background-color: #EBE6CF;
+  background: #EBE6CF;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #wrapper {
-  -webkit-border-bottom-left-radius: 10px;
-  -webkit-border-bottom-right-radius: 10px;
-  -moz-border-radius-bottomleft: 10px;
-  -moz-border-radius-bottomright: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  
   border: 1px solid #E8E3D5;
   width: 640px;
   margin: auto;
   padding: 30px;
   background-color: #EBE7D6;
+  
 }
 
 header {
@@ -108,11 +102,24 @@ header span.name {
 }
 
 #projects h2 {
+  width: 148px;
   font-family: 'CandalRegular';
   font-size: 30px;
   text-align: center;
   text-shadow: #FFF 2px 2px 1px;
-  margin-bottom: 15px;
+  margin: 0 246px 15px;
+  
+  -webkit-transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transform: rotate(0deg);
+  -moz-transition: -moz-transform 2s;
+}
+
+#projects h2:hover {
+  -webkit-transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transform: rotate(360deg);
+  -moz-transition: -moz-transform 1s;
 }
 
 .project {
