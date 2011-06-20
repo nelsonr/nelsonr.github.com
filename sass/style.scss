@@ -4,6 +4,7 @@
 @import "compass/css3/transition";
 @import "compass/css3/transform";
 @import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
 
 @include font-face("CandalRegular", font-files("Candal-webfont.woff", woff,  "Candal-webfont.ttf", truetype, "Candal-webfont.svg", svg), "Candal-webfont.eot");
 
@@ -27,7 +28,7 @@ body {
 header {
     font-size: 30px;
     font-family: 'CandalRegular';
-    text-shadow: #FFF 2px 2px 1px;
+    @include single-text-shadow(#FFF, 2px, 2px, 1px);
 }
 
 header #introduction {
@@ -70,7 +71,7 @@ header span.name {
     font-family: 'CandalRegular';
     font-size: 30px;
     text-align: center;
-    text-shadow: #FFF 2px 2px 1px;
+    @include single-text-shadow(#FFF, 2px, 2px, 1px);
     margin: 0 246px 15px;
 }
 

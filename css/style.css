@@ -84,7 +84,7 @@ body {
 header {
   font-size: 30px;
   font-family: 'CandalRegular';
-  text-shadow: #FFF 2px 2px 1px;
+  text-shadow: white 2px 2px 1px;
 }
 
 header #introduction {
@@ -132,7 +132,7 @@ header span.name {
   font-family: 'CandalRegular';
   font-size: 30px;
   text-align: center;
-  text-shadow: #FFF 2px 2px 1px;
+  text-shadow: white 2px 2px 1px;
   margin: 0 246px 15px;
 }
 
