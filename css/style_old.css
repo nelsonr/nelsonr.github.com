@@ -1,3 +1,9 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* Reset */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -7,62 +13,53 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure,
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-  display: block;
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-/* ERIC MEYER'S RESET */
+/* Main style starts here */
 @font-face {
-  font-family: "CandalRegular";
-  src: url('fonts/Candal-webfont.eot');
-  src: url('fonts/Candal-webfont.eot?iefix') format('eot'), url('fonts/Candal-webfont.woff') format('woff'), url('fonts/Candal-webfont.ttf') format('truetype'), url('fonts/Candal-webfont.svg') format('svg');
+    font-family: 'CandalRegular';
+    src: url('fonts/Candal-webfont.eot');
+    src: url('fonts/Candal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Candal-webfont.woff') format('woff'),
+         url('fonts/Candal-webfont.ttf') format('truetype'),
+         url('fonts/Candal-webfont.svg#CandalRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* Main style starts here  */
 body {
   color: #1E1C1C;
   background: #EBE6CF;
@@ -75,10 +72,7 @@ body {
   margin: auto;
   padding: 30px;
   background-color: #EBE7D6;
-  -moz-box-shadow: #c4c2ba 0 0 8px;
-  -webkit-box-shadow: #c4c2ba 0 0 8px;
-  -o-box-shadow: #c4c2ba 0 0 8px;
-  box-shadow: #c4c2ba 0 0 8px;
+  
 }
 
 header {
@@ -95,26 +89,6 @@ header #introduction {
 
 header #skills {
   font-size: 20px;
-}
-
-#skills span {
-  position: relative;
-}
-
-#skills .popup {
-  display: block;
-  position: absolute;
-  top: 20px;
-  padding: 10px;
-  width: 100px;
-  height: 60px;
-  /*visibility: hidden;*/
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  border-radius: 3px;
 }
 
 header span.name {
@@ -134,6 +108,18 @@ header span.name {
   text-align: center;
   text-shadow: #FFF 2px 2px 1px;
   margin: 0 246px 15px;
+  
+  -webkit-transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transform: rotate(0deg);
+  -moz-transition: -moz-transform 2s;
+}
+
+#projects h2:hover {
+  -webkit-transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transform: rotate(360deg);
+  -moz-transition: -moz-transform 1s;
 }
 
 .project {
@@ -158,11 +144,8 @@ header span.name {
   height: 402px;
   border: 5px solid white;
   margin: 10px;
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
